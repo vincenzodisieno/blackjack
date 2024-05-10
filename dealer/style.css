@@ -1,0 +1,74 @@
+#label-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh; /* Altezza pari all'altezza della finestra */
+    /*width: calc(50% - 200px); /* Larghezza al 50% della finestra meno la larghezza del div webcam-container */
+    /*background-color: rgba(255, 0, 0, 0.2); /* Colore di sfondo con trasparenza */
+    z-index: 1; /* Assicura che il container sia davanti agli altri elementi */
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 15px;
+    left:10px;
+    margin-top: 0%;
+}
+
+
+#webcam-container {
+    margin-left: calc(50% - 200px); /* Posizionamento a destra del container della webcam */
+    width: 400px;
+    
+    height: 400px;
+    background-color: lightblue; /* Colore di sfondo per il container della webcam (aggiunto solo per scopi di visualizzazione) */
+}
+
+
+/* Stili per la chiarezza della visualizzazione */
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    min-height: 100vh;
+    background-image: url("../images/tavolo.jpg"); /* Imposta l'immagine di sfondo */
+    background-size: cover; /* Ridimensiona l'immagine di sfondo */
+    background-repeat: no-repeat;
+    height: auto;
+}
+
+button{
+    font-size: 40px;
+    display: block;
+    margin:auto;
+}
+
+#quellochevuoi{
+    position:absolute;
+    width:50%;
+    height:50%;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    font-size: 30px;
+    color:white;
+}
+
+#par, #ar{
+    height: 15%;
+    width: 100%;
+    margin:0;
+    background-color: black;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+#car, #r{
+ display: block;
+ margin-top: auto;
+ margin: auto;
+ color: white;
+ font-size: 30px;
+}

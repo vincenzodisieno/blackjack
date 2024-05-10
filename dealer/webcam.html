@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teachable Machine Image Model</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="label-container"></div>
+    
+    <button id="inizio" type="button" onclick="init()">Start recording</button>
+    <div id="quellochevuoi">
+        <p id="remaining-cards"></p>
+        <div style="width: 400px; height: 400px; margin: 0 auto;">
+            <label style="font-size: 80%;">Override</label>
+            <select id="select">
+                <option value="0">asso di cuori</option>
+                <option value="1">due di cuori</option>
+                <option value="2">tre di cuori</option>
+                <option value="3">quattro di cuori</option>
+                <option value="4">cinque di cuori</option>
+                <option value="5">sei di cuori</option>
+                <option value="6">sette di cuori</option>
+                <option value="7">otto di cuori</option>
+                <option value="8">nove di cuori</option>
+                <option value="9">dieci di cuori</option>
+                <option value="10">jack di cuori</option>
+                <option value="11">regina di cuori</option>
+                <option value="12">re di cuori</option>
+                <option value="13">asso di quadri</option>
+                <option value="14">due di quadri</option>
+                <option value="15">tre di quadri</option>
+                <option value="16">quattro di quadri</option>
+                <option value="17">cinque di quadri</option>
+                <option value="18">sei di quadri</option>
+                <option value="19">sette di quadri</option>
+                <option value="20">otto di quadri</option>
+                <option value="21">nove di quadri</option>
+                <option value="22">dieci di quadri</option>
+                <option value="23">jack di quadri</option>
+                <option value="24">regina di quadri</option>
+                <option value="25">re di quadri</option>
+                <option value="26">asso di fiori</option>
+                <option value="27">due di fiori</option>
+                <option value="28">tre di fiori</option>
+                <option value="29">quattro di fiori</option>
+                <option value="30">cinque di fiori</option>
+                <option value="31">sei di fiori</option>
+                <option value="32">sette di fiori</option>
+                <option value="33">otto di fiori</option>
+                <option value="34">nove di fiori</option>
+                <option value="35">dieci di fiori</option>
+                <option value="36">jack di fiori</option>
+                <option value="37">regina di fiori</option>
+                <option value="38">re di fiori</option>
+                <option value="39">asso di picche</option>
+                <option value="40">due di picche</option>
+                <option value="41">tre di picche</option>
+                <option value="42">quattro di picche</option>
+                <option value="43">cinque di picche</option>
+                <option value="44">sei di picche</option>
+                <option value="45">sette di picche</option>
+                <option value="46">otto di picche</option>
+                <option value="47">nove di picche</option>
+                <option value="48">dieci di picche</option>
+                <option value="49">jack di picche</option>
+                <option value="50">regina di picche</option>
+                <option value="51">re di picche</option>
+            </select>
+            <button style="font-size: 60%; display: inline;" onclick="OverrideSendData()">Invia</button><br><br>
+            <div id="ar">
+                <p id="r">Ultima carta inviata: <span id="c"></span></p>
+            </div>
+            <div id="webcam-container"></div>
+            <div id="par">
+                <p id="car"></p>
+            </div>
+        </div>
+    </div>
+
+    <div id="remaining-cards" style="text-align: center; margin-top: 20px;"></div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
